@@ -9,7 +9,7 @@ Note: for now, it just outputs the placement of the initial starting set - you'l
 
 Algorithmic complexity for m = number of major pieces, p = number of pawns, n = number of squares: 
 
-  - O( n<sup>m</sup>np<sup>2</sup>  +  n<sup>m</sup>sqrt(n)mp  +  n<sup>m</sup>p<sup>3</sup>log(p) ), I believe the first two terms are tight bounds, but better math could bring the last down
+  - O( n<sup>m+1</sup>p<sup>2</sup>  +  n<sup>m</sup>sqrt(n)mp  +  n<sup>m</sup>p<sup>3</sup>log(p) ), I believe the first two terms are tight bounds, but better math could bring the last down
 
 For m & p on order of O(1):
 
