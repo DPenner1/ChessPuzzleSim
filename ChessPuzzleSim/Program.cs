@@ -29,8 +29,6 @@ namespace dpenner1.Chess.ChessDominationSolver
         const string missingBothBishops = "|QRRNN,8x8,33,A,V,|0-64|0,0,0,0";
         const string missingBothKnights = "|QRRBB,8x8,33,A,V,|0-64|0,0,0,0";
 
-        const string astroTrain = "Qb6;Rh1;Ra2;Be6;Be7;Ne5|QRRBBN,8x8,33,A,V,|0-64|0,0,0,0";
-        const string fiveBishops = "|BBBBB,8x8,28,A,V,|0-64|0,0,0,0";
         const string eightBishops = "|BBBBBBBB,8x8,28,A,V,2|0-64|0,0,0,0";
         const string nineBishops = "|BBBBBBBBB,8x8,28,A,V,2|0-64|0,0,0,0";
         const string eightBishopsOneRook = "|RBBBBBBBB,8x8,29,A,V,2|0-64|0,0,0,0";
@@ -44,7 +42,6 @@ namespace dpenner1.Chess.ChessDominationSolver
         const string fiveBishopsOneQueen = "|QBBBBB,8x8,28,A,V,2|0-64|0,0,0,0";
         const string fourBishopsOneRookOneQueen = "|QRBBBB,8x8,28,A,V,R2|0-64|0,0,0,0";
         const string twoBishopsTwoKnights = "|BBNN,8x8,28,A,V,|0-64|0,0,0,0";
-        //const string threeBishopsThreeKnights = "Nf1;Ne1;Nd1;Bc1;Bb1;Ba1,Nf1;Ne1;Nd1;Bc1;Bb1;Ba1,28,,0,0,0,0";
 
         public static void Main(string[] args)
         {
