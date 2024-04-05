@@ -9,19 +9,19 @@ Note: for now, it just outputs the placement of the initial starting set - you'l
 
 Algorithmic complexity for m = number of major pieces, p = number of pawns, n = number of squares: 
 
-  O( n<sup>m</sup>np<sup>2</sup>  +  n<sup>m</sup>sqrt(n)mp  +  n<sup>m</sup>p<sup>3</sup>log(p) )   - I believe the first two terms are tight bounds, but better math could bring the last down
+  - O( n<sup>m</sup>np<sup>2</sup>  +  n<sup>m</sup>sqrt(n)mp  +  n<sup>m</sup>p<sup>3</sup>log(p) ), I believe the first two terms are tight bounds, but better math could bring the last down
 
 For m & p on order of O(1):
 
-  O(n<sup>m+1</sup>)
+  - O(n<sup>m+1</sup>)
 
 For m & p on order of O(sqrt(n)):
 
-  O(n<sup>sqrt(n)+2</sup>)
+  - O(n<sup>sqrt(n)+2</sup>)
 
 For m & p on order of O(n):
 
-  O(n<sup>n+3</sup>log(n)) = O(heat death of the universe)
+  - O(n<sup>n+3</sup>log(n)) = O(heat death of the universe)
 
 Basically, this algorithm scales way better with board size (polynomial!) than number of pieces (worse than exponential!)
 
@@ -44,7 +44,7 @@ Note: I'm coming back to this after at least five years. Random updates:
   - Get that parallelization working
   - Get the solution printout to include pawn placements
   - See about improving the pawn placement algo (including that O(n) board copy) 
-      - though this might be premature optimization, in practice only about 10-15% of board evaluations have pawns
+      - Though this might be premature optimization, in practice only about 10-15% of board evaluations have pawns
   - See about a "bishops on opposite colors" restriction
   - See about adding opposing pieces (pawns target in the other direction)
   - Search resumption is not yet smooth (especially stats & found solutions)
